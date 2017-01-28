@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WDScrollableSegmentedControl_Example' do
+  pod 'WDScrollableSegmentedControl', :path => '../'
+
+  target 'WDScrollableSegmentedControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
