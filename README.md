@@ -8,6 +8,7 @@
 Minimal segmented control, scrollable, customizable, animatable, easy as hell to use.
 
 Works perfectly with [YTPageController](https://github.com/yeatse/YTPageController):
+
 ![Screenshot](screenshot.gif)
 
 ## Usage
