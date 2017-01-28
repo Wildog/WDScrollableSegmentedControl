@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1560E7241E3D211800E3BBD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1560E7231E3D211800E3BBD8 /* Main.storyboard */; };
+		1560E72A1E3D212800E3BBD8 /* YTPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560E7271E3D212800E3BBD8 /* YTPageController.m */; };
+		1560E72B1E3D212800E3BBD8 /* YTPageControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560E7291E3D212800E3BBD8 /* YTPageControllerSegue.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +25,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		7000BCBA8DBBE38D7030DADF /* Pods_WDScrollableSegmentedControl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84B1D214B3746D44E3CF491 /* Pods_WDScrollableSegmentedControl_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CF06DA9B7EB728E462E28C58 /* Pods_WDScrollableSegmentedControl_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C9FA0FD7EFFE225FE4702 /* Pods_WDScrollableSegmentedControl_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1560E7231E3D211800E3BBD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1560E7261E3D212800E3BBD8 /* YTPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPageController.h; sourceTree = "<group>"; };
+		1560E7271E3D212800E3BBD8 /* YTPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPageController.m; sourceTree = "<group>"; };
+		1560E7281E3D212800E3BBD8 /* YTPageControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPageControllerSegue.h; sourceTree = "<group>"; };
+		1560E7291E3D212800E3BBD8 /* YTPageControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPageControllerSegue.m; sourceTree = "<group>"; };
 		223AFF825F32AAF8D4897663 /* Pods-WDScrollableSegmentedControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDScrollableSegmentedControl_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDScrollableSegmentedControl_Tests/Pods-WDScrollableSegmentedControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		37A58F470D10A6138314472C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		37A58F470D10A6138314472C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WDScrollableSegmentedControl_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDScrollableSegmentedControl_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,10 +68,9 @@
 		65385236DAA0EFF9E8442B75 /* Pods-WDScrollableSegmentedControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDScrollableSegmentedControl_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDScrollableSegmentedControl_Example/Pods-WDScrollableSegmentedControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82880CC478B70A99562D8B75 /* Pods-WDScrollableSegmentedControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDScrollableSegmentedControl_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDScrollableSegmentedControl_Tests/Pods-WDScrollableSegmentedControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		922D70500D298FAF6F7380CA /* WDScrollableSegmentedControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WDScrollableSegmentedControl.podspec; path = ../WDScrollableSegmentedControl.podspec; sourceTree = "<group>"; };
+		922D70500D298FAF6F7380CA /* WDScrollableSegmentedControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WDScrollableSegmentedControl.podspec; path = ../WDScrollableSegmentedControl.podspec; sourceTree = "<group>"; };
 		A84B1D214B3746D44E3CF491 /* Pods_WDScrollableSegmentedControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDScrollableSegmentedControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9D0CED066A4A3555EADB7E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C9D0CED066A4A3555EADB7E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D42C9FA0FD7EFFE225FE4702 /* Pods_WDScrollableSegmentedControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDScrollableSegmentedControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7737AC8DF188F67797B9CE /* Pods-WDScrollableSegmentedControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDScrollableSegmentedControl_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDScrollableSegmentedControl_Example/Pods-WDScrollableSegmentedControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +112,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1560E7251E3D212800E3BBD8 /* YTPageController */ = {
+			isa = PBXGroup;
+			children = (
+				1560E7261E3D212800E3BBD8 /* YTPageController.h */,
+				1560E7271E3D212800E3BBD8 /* YTPageController.m */,
+				1560E7281E3D212800E3BBD8 /* YTPageControllerSegue.h */,
+				1560E7291E3D212800E3BBD8 /* YTPageControllerSegue.m */,
+			);
+			path = YTPageController;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +160,12 @@
 		6003F593195388D20070C39A /* Example for WDScrollableSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
+				1560E7251E3D212800E3BBD8 /* YTPageController */,
 				6003F59C195388D20070C39A /* WDAppDelegate.h */,
 				6003F59D195388D20070C39A /* WDAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WDViewController.h */,
 				6003F5A6195388D20070C39A /* WDViewController.m */,
+				1560E7231E3D211800E3BBD8 /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -247,7 +265,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WD;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Wildog;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -279,10 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				1560E7241E3D211800E3BBD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,9 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1560E72B1E3D212800E3BBD8 /* YTPageControllerSegue.m in Sources */,
 				6003F59E195388D20070C39A /* WDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1560E72A1E3D212800E3BBD8 /* YTPageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,14 +479,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -499,13 +524,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

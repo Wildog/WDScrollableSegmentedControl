@@ -1,0 +1,6 @@
+framework module Pods_WDScrollableSegmentedControl_Example {
+  umbrella header "Pods-WDScrollableSegmentedControl_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

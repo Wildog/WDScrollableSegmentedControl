@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WDScrollableSegmentedControl'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WDScrollableSegmentedControl.'
+  s.summary          = 'Minimal segmented control, scrollable, customizable, animatable, easy as hell to use.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/WDScrollableSegmentedControl'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/Wildog/WDScrollableSegmentedControl'
+  s.screenshots     = 'https://raw.githubusercontent.com/Wildog/WDScrollableSegmentedControl/master/screenshot.gif', 'https://raw.githubusercontent.com/Wildog/WDScrollableSegmentedControl/master/ibinspectable.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Wildog' => 'i@wil.dog' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/WDScrollableSegmentedControl.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/Wildog/WDScrollableSegmentedControl.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/WildogGo'
 
   s.ios.deployment_target = '8.0'
 
@@ -37,6 +37,4 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

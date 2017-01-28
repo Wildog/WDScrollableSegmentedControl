@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kSU-lo-vDa">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgP-2u-5Vb" customClass="WDScrollableSegmentedControl">
+                                <rect key="frame" x="0.0" y="64" width="320" height="42"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="424-su-32y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                        <color key="value" red="0.090196078431372548" green="0.47058823529411764" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonHighlightColor">
+                                        <color key="value" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonSelectedColor">
+                                        <color key="value" red="0.089568257329999998" green="0.47252741459999997" blue="0.4178617597" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorMoveDuration">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgk-ty-VBT">
+                                <rect key="frame" x="0.0" y="106" width="320" height="462"/>
+                                <connections>
+                                    <segue destination="XsQ-Z6-YnQ" kind="embed" identifier="page_controller_segue" id="CQu-Ii-ypm"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tgk-ty-VBT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J6p-kc-Wnv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tgk-ty-VBT" secondAttribute="bottom" id="KeR-Cl-grw"/>
+                            <constraint firstItem="JgP-2u-5Vb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NxY-rm-NOS"/>
+                            <constraint firstAttribute="trailing" secondItem="JgP-2u-5Vb" secondAttribute="trailing" id="VmY-8v-1fp"/>
+                            <constraint firstAttribute="trailing" secondItem="Tgk-ty-VBT" secondAttribute="trailing" id="YsK-U7-MXZ"/>
+                            <constraint firstItem="Tgk-ty-VBT" firstAttribute="top" secondItem="JgP-2u-5Vb" secondAttribute="bottom" id="ZtC-P6-zNn"/>
+                            <constraint firstItem="JgP-2u-5Vb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ipK-u9-L5Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Example" id="Njj-aY-Gy5"/>
+                    <connections>
+                        <outlet property="scrollSegment" destination="JgP-2u-5Vb" id="X4A-eC-3uN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367.5" y="146.83098591549296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nBd-LB-h7T">
+            <objects>
+                <navigationController id="kSU-lo-vDa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ojv-OA-SaW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="okB-Au-7ne"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjg-kM-ghe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="147"/>
+        </scene>
+        <!--Page Controller-->
+        <scene sceneID="nSD-OL-ws3">
+            <objects>
+                <viewController id="XsQ-Z6-YnQ" customClass="YTPageController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDa-Ve-X9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="203"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,22 @@
+{
+  "name": "WDScrollableSegmentedControl",
+  "version": "0.1.0",
+  "summary": "A short description of WDScrollableSegmentedControl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/WDScrollableSegmentedControl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Wildog": "i@wil.dog"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/WDScrollableSegmentedControl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WDScrollableSegmentedControl/Classes/**/*"
+}

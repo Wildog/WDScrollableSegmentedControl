@@ -1,0 +1,16 @@
+PODS:
+  - WDScrollableSegmentedControl (0.1.0)
+
+DEPENDENCIES:
+  - WDScrollableSegmentedControl (from `../`)
+
+EXTERNAL SOURCES:
+  WDScrollableSegmentedControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WDScrollableSegmentedControl: 7adae341e3d8162a750ed4e8cd58624112701d32
+
+PODFILE CHECKSUM: 488a873095cbaa51d7f07c7335aae95c43d18b9b
+
+COCOAPODS: 1.1.1
