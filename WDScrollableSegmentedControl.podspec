@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDScrollableSegmentedControl'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Minimal segmented control, scrollable, customizable, animatable, easy as hell to use.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Minimal segmented control, scrollable, customizable, animatable, easy as hell to use.
                        DESC
 
   s.homepage         = 'https://github.com/Wildog/WDScrollableSegmentedControl'
