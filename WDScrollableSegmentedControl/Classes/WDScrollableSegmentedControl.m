@@ -51,6 +51,7 @@
     _scrollView.delegate = self;
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
+    _scrollView.scrollsToTop = NO;
     _scrollView.tag = -42;
     [self addSubview:_scrollView];
 }
@@ -150,7 +151,12 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.scrollView.frame = self.bounds;
+    if (!self.leftAlign && self.scrollView.contentSize.width < self.scrollView.frame.size.width) {
+        CGFloat padding = (self.scrollView.frame.size.width - self.scrollView.contentSize.width) / 2;
+        self.scrollView.frame = CGRectMake(self.scrollView.frame.origin.x + padding, self.scrollView.frame.origin.y, self.scrollView.contentSize.width, self.scrollView.frame.size.height);
+    } else {
+        self.scrollView.frame = self.bounds;
+    }
     self.selectedIndex = self.selectedIndex;
 }
 

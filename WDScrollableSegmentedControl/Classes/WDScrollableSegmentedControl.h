@@ -40,9 +40,12 @@ IB_DESIGNABLE
 // button font, default to system font 15pt
 @property (nonatomic, strong) IBInspectable UIFont *font;
 
+// should container be left aligned or centered if buttons are not enough to scroll
+@property (nonatomic, assign) IBInspectable BOOL leftAlign;
+
 @property (nonatomic, strong) NSArray *buttons;
 @property (nonatomic, assign) NSInteger selectedIndex;
-@property (nonatomic, strong) id<WDScrollableSegmentedControlDelegate> delegate;
+@property (nonatomic, weak) id<WDScrollableSegmentedControlDelegate> delegate;
 
 // use this method to change button color dynamically
 - (void)setButtonColor:(UIColor *)color forState:(UIControlState)state;
